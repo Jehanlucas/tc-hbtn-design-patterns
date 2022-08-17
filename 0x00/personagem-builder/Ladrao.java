@@ -1,11 +1,12 @@
 public class Ladrao extends Personagem{
 
-    public Ladrao(String nome,  int inteligencia, int forca, int vigor, int resistencia, int destreza) {
+    public Ladrao(String nome, int inteligencia, int forca, int vigor, int resistencia, int destreza) {
         super(nome, TipoPersonagem.LADRAO, inteligencia, forca, vigor, resistencia, destreza);
-        if (forca > destreza && inteligencia > destreza){
-            throw new IllegalArgumentException("Atributos invalidos para LADRÃO");
-        }
+        if (destreza < forca || destreza < inteligencia) {
+            throw new IllegalArgumentException("Atributos invalidos para LADRAO");
+        };
     }
+
 
     @Override
     public double getDanoAtaque() {
