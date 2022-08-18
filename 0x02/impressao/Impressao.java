@@ -1,4 +1,3 @@
-package impressao;
 
 public class Impressao {
     private int paginasTotais;

@@ -1,4 +1,3 @@
-package impressao;
 
 public class ImpressaoFactory {
     public static Impressao createImpressao(TamanhoImpressao tamanho, int totalDePaginas, int quantidadeDePaginasColoridas, boolean ehFrenteVerso) {
