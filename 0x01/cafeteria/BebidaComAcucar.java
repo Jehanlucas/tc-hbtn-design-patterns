@@ -1,10 +1,8 @@
-
 import java.util.List;
 
-public class BebidaComAcucar  extends BebidaDecorator{
-
-    public BebidaComAcucar(Bebida bebidaDecorada) {
-        super(bebidaDecorada);
+public class BebidaComAcucar extends BebidaDecorator{
+    public BebidaComAcucar(Bebida bebida) {
+        super(bebida);
     }
 
     @Override
