@@ -1,7 +1,7 @@
 
 public class NaveEspacial {
-    private int saude ;
-    private int ataque ;
+    private int saude;
+    private int ataque;
 
     public NaveEspacial(int saude, int ataque) {
         this.saude = saude;
@@ -12,22 +12,12 @@ public class NaveEspacial {
         return saude;
     }
 
-    public void setSaude(int saude) {
-        this.saude = saude;
-    }
-
     public int getAtaque() {
         return ataque;
     }
 
-    public void setAtaque(int ataque) {
-        this.ataque = ataque;
-    }
-
     @Override
     public String toString() {
-        return
-                "Saude: " + saude +
-                " - Ataque: " + ataque ;
+        return String.format("Saude: %d - Ataque: %d", getSaude(), getAtaque());
     }
 }
